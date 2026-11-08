@@ -913,3 +913,94 @@ h6 {
     padding: 1rem;
   }
 }
+
+/* ===== Thank You Modal ===== */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(45, 45, 45, 0.6);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.modal.modal-show {
+  display: flex;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.modal-content {
+  position: relative;
+  background: var(--retro-white);
+  border: 3px solid var(--retro-red);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--retro-dark);
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modal-close:hover {
+  color: var(--retro-red);
+}
+
+.modal-icon {
+  display: block;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.modal-content h2 {
+  color: var(--retro-dark);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.modal-content p {
+  font-family: "Inter", sans-serif;
+  color: var(--retro-grey);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.modal-btn {
+  background: var(--retro-red);
+  color: var(--retro-white);
+  padding: 0.8rem 2.5rem;
+  border: none;
+  border-radius: 6px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #b71c1c;
+  transition: all 0.2s ease;
+}
+
+.modal-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #b71c1c;
+}
+
+.modal-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #b71c1c;
+}
