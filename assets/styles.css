@@ -983,14 +983,7 @@ body.modal-open {
 }
 
 .modal-btn {
-  background: var(--retro-red);
-  color: var(--retro-white);
-  padding: 0.8rem 2.5rem;
-  border: none;
-  border-radius: 6px;
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
+  
   cursor: pointer;
   box-shadow: 0 4px 0 #b71c1c;
   transition: all 0.2s ease;
